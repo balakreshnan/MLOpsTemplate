@@ -32,7 +32,7 @@ jobs:
       - name: Install az ml & set default values for AML
         run: | #setup: provide group, workspace and location
           az extension add -n ml -y --version 2.2.1
-	  az account set -s "b50953d6-8df7-4340-aba4-513baf376372"
+          az account set -s "b50953d6-8df7-4340-aba4-513baf376372"
           az configure --defaults group=mlops-rg-727421l workspace=mlops-rg-727421 location=westus2   
       - name: run training and model validation
         run: |
